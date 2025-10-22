@@ -1,0 +1,39 @@
+name: sendsms6
+description: A Flutter app for stable bulk SMS sending with Kotlin background service.
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.2.0 <4.0.0"
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Čuvanje liste brojeva, statusa itd.
+  shared_preferences: ^2.2.2
+
+  # Prikaz poruka, animacije i expand/collapse efekti
+  flutter_slidable: ^3.0.1
+  expandable: ^5.0.1
+
+  # State management – jednostavno za ovakav projekat
+  provider: ^6.1.2
+
+  # JSON serializacija ako kasnije bude trebalo
+  intl: ^0.19.0
+  permission_handler: ^11.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+
+  # assets:
+  #   - assets/
